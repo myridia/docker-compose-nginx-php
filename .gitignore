@@ -1,0 +1,2 @@
+dockers/log_nginx
+!dockers/log_nginx/.hidden
