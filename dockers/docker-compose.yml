@@ -1,0 +1,20 @@
+version: '3'
+services:
+  utd_nginx:
+    container_name: utd_nginx
+    image: nginx
+    ports:
+        - "80:80" 
+    volumes:
+      - ../public/:/usr/share/nginx/html/
+      - ./etc/nginx/conf.d:/etc/nginx/conf.d
+      - ./log_nginx/:/var/log/nginx/
+    tty: true
+    links:
+        - php
+  php:
+    container_name: php
+    image: php:8.3-fpm
+    volumes:
+      - ../public/:/usr/share/nginx/html/        
+
