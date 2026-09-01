@@ -1,3 +1,5 @@
+<img src="docker-compose-nginx-php.svg" alt="docker-compose-nginx-php" width="120">
+
 # Example docker-compose.yml file with php-fpm and nginx working together
 * It creates 1x nginx docker
 * It creates 1x php-fpm docker
